@@ -1,0 +1,33 @@
+.container {
+    flex:1;
+}
+.container__title {
+    background-color: rgb(47, 47, 47);
+    line-height: 4rem;
+    color: #fff;
+    font-size: x-large;
+    padding: 0 2rem;
+    box-shadow: 0px 6px 5px 0px #000;
+    text-transform: capitalize;
+}
+
+.container__search {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.8rem 5rem 0;
+}
+
+.container__search--input {
+    width: 500px;
+    margin-right: 1rem;
+}
+
+.container__content {
+    padding: 2rem;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+}

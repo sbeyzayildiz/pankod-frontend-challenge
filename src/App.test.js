@@ -1,8 +1,22 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("App Component", () => {
+  beforeEach(() => {render(<App />);});
+
+  test("Header is successfully", () => {
+    const header = screen.getByText(/Login/)
+    expect(header).toBeInTheDocument();
+  })
+
+  test("Footer is successfully", () => {
+    const footer = screen.getByText(/Copyright/)
+    expect(footer).toBeInTheDocument();
+  })
+
+  test("Home is successfully", () => {
+    const home = screen.getByText(/Popular Titles/)
+    expect(home).toBeInTheDocument();
+  })
+
 });
